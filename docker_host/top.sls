@@ -1,4 +1,4 @@
 base:
   "*":
-    - install
-    - service
+    - common.install
+    - common.service
