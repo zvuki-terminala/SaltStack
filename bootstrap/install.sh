@@ -5,7 +5,8 @@ curl -L https://bootstrap.saltproject.io | sudo sh -s -- -x python3 \
     stable latest
 
 # Make local directories
-mkdir -p /srv/local/{salt,top}
+mkdir -p /srv/local/salt
+mkdir /srv/local/top
 
 # States for synchronized main state repo and highstate schedule
 cat << EOF > /srv/local/salt/entrypoint.sls
