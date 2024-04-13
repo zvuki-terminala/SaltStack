@@ -1,0 +1,4 @@
+highstate_schedule:
+  schedule.present:
+    - function: state.apply
+    - cron: "5 * * * *"

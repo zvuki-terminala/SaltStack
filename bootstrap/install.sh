@@ -27,11 +27,6 @@ sync_all_modules:
     - order: 1
     - onchanges:
       - git: sync_states
-
-highstate_schedule:
-  schedule.present:
-    - function: state.apply
-    - cron: "5 * * * *"
 EOF
 
 # Top file in a fake environment to be merged with the remote top
