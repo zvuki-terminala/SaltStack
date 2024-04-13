@@ -5,3 +5,7 @@ nginx_pkg:
 docker_pkg:
   pkg.installed:
     - name: docker.io
+
+redis_pkg:
+  pkg.installed:
+    - name: redis

@@ -4,3 +4,10 @@ nginx_service:
     - enable: True
     - require:
       - pkg: nginx_pkg
+
+redis_service:
+  service.running:
+    - name: redis
+    - enable: True
+    - require:
+      - pkg: redis_pkg
